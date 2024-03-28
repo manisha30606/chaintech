@@ -1,38 +1,387 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ============HERO SECTION STYLE======================== */
+.hero-page{
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding-bottom: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar{
+  height: 40%;
+  padding: 2% 15%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(104, 103, 103);
+}
+.navbar .logo img{
+  width: 40%;
+  height: 40%;
+}
+.nav-links {
+  display: flex;
+  color: #fff;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links li {
+  font-size: 1rem;
+  padding: 0 20px;
+  cursor: pointer;
+
+  list-style: none;
+  font-weight: 600;
+}
+.list-unique{
+  color:#2BFF8A
+}
+.mobile-menu-icon {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.header{
+  text-align: center;
+  margin: 5% 0;
+}
+.header h1{
+  font-size: 6rem;
+  line-height: 1.2; 
+}
+.header h1 span{
+  background-image: linear-gradient(to left, #00FFA7, #FFFF00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header p{
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.buttons .btn{
+  border: none;
+  background-color: #fff;
+  color: #000;
+  margin-top: 2rem;
+  padding: .8rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 31px;
+  cursor: pointer;
+}
+.header .buttons .btn span{
+  background-color: #000;
+  color: #fff;
+  padding: .4rem .5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+
+
+/* =====================SERVICE SECTION STYLE=========================== */
+.service-data{
+  background-color: #fff;
+  color: #000;
+  margin: 4% 15%;
+}
+.service-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.head-icon{
+  margin: auto 2rem;
+  cursor: pointer;
+}
+.head-icon .left{
+  margin-right: 2rem;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.head-icon .right{
+font-size: 2.5rem;
+}
+.service-head h1{
+   font-size: 3rem;
+   font-weight: 600;
+}
+.service-head p{
+  font-size: 1rem;
+}
+.service-head p span{
+    text-align: right;
+}
+.service-boxes{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 1rem;
+}
+.service-box{
+  border:3px solid #000;
+  border-radius: 21px;
+
+}
+
+.box-top{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-bottom: 2px solid #000;
+}
+.box-top img{
+  height: 10%;
+  width:10%;
+  background: #000;
   }
-  to {
-    transform: rotate(360deg);
+.box-top h4{
+  font-size: .8rem;
+  padding-left: 1rem;
+  font-weight: 200;
+}
+.box-middle{
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+.box-middle h1{
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  font-weight: 200;
+}
+.box-middle .middle-img{
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+.box-middle img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  
+}
+.box-bottom{
+  text-align: right;
+  padding: .7rem 0;
+}
+.box-bottom .btns{
+   margin-right: 1rem;
+   padding: .5rem .8rem;
+   border: 2px solid #000;
+   font-size: 1rem;
+   border-radius: 31px;
+   color: #000;
+   cursor: pointer;
+   background-color: #fff;
+}
+.box-bottom .btns span{
+     padding: .2rem .4rem;
+     background-image: linear-gradient(to left, #00FFA7, #FFFF00);
+     border-radius: 50%;
+     margin-left: .5rem;
+}
+.service-box:nth-child(2) .box-bottom .btns {
+  background-color: #000;
+  color: #fff;
+}
+.service-box:nth-child(2) .box-bottom .btns span{
+  color: #000;
+}
+
+/* =====================FOOTER STYLE=========================== */
+
+.footer{
+  background-color: #000;
+  color: #fff;
+}
+.footer-data{
+  text-align: center;
+  padding: 3% 5%;
+
+}
+.footer-data img{
+  width: 10%;
+  height: 40%;
+  padding-bottom: 1.5rem;
+}
+.footer-data p{
+  color: #898989;
+  border-top:1px solid #898989;
+  padding-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================RESPONSIVE DESIGN ======================= */
+@media screen and (max-width: 1448px) {
+ 
+
+  .nav-links {
+    display: none;
+}
+.nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 12%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    
+}
+ul li {
+  padding: 1rem 2rem;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.8rem;
+}
+.mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+    background: #000;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.head-icon .left{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+.head-icon .right{
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width:1180px) {
+  .service-boxes{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 1rem 2rem;
+  }
+  .box-top h4{
+    font-size: .8rem;
+  }
+  .box-middle h1{
+    font-size: 1.5rem;
+  }
+  .service-data{
+    margin: 4% 8%;
+  }
+  .head-icon .left{
+    font-size: 1rem;
+    margin-right: .5rem;
+  }
+  .head-icon .right{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:773px) {
+  .service-head h1{
+    font-size: 1.7rem;
+  }
+  .service-head p{
+    font-size: .5rem;
+  }
+  .service-boxes{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem 1rem;
+  }
+  .service-data{
+    margin: 4% 5%;
+  }
+  .box-bottom .btn{
+    font-size: .5rem;
+    padding: .2rem .3rem;
+  }
+  .box-middle h1{
+    font-size: 2rem;
+  }
+  .box-top h4{
+    font-size: .8rem;
+  }
+  .box-bottom .btns{
+    font-size: .8rem;
+  }
+  .buttons .btn {
+    font-size: .5rem;
+  }
+}
+@media screen and (max-width:476px) {
+  .service-head h1{
+    font-size: 1.5rem;
+  }
+  .box-middle h1{
+    font-size: 1.2rem;
+  }
+  .footer-data img{
+    width: 20%;
+    padding-bottom: .6rem;
+  }
+  .footer-data p{
+    padding-top: .6rem;
+    font-size: .5rem;
+  }
+  .service-boxes{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    gap: 1rem 2rem;
+}
+.box-top h4{
+  font-size: 1rem;
+}
+}
+@media screen and (max-width:1036px) {
+  .header h1{
+    font-size: 4rem;
+  }
+  .nav-links-mobile{
+    top:10%;
+  }
+}
+
+@media screen and (max-width:605px) {
+  .header h1{
+    font-size: 3rem;
+  }
+  .header p{
+    font-size: .5rem;
+  }
+  ul li{
+    font-size: 1rem;
+    padding: .5rem 1rem ;
+  }
+  .header .button .btn{
+    padding: .8rem .6rem;
+    font-size: .6rem;
+  }
+  .button span{
+    margin-left: .3rem;
+  }
+  .navbar .logo img{
+    width: 30%;
+    height: 30%;
+  }
+  .nav-links-mobile{
+    top:8%;
   }
 }
